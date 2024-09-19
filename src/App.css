@@ -127,8 +127,7 @@ h1 {
 
 .flower_planb {
   width: 75%;
-  margin-left: 4.5rem;
-  animation: arc_movement 15s ease-in-out infinite;
+  margin-left: 18%;
 }
 
 @keyframes arc_movement {
@@ -163,7 +162,7 @@ h1 {
 
 .flower_neptun {
   width: 75%;
-  margin-left: 5.5rem;
+  margin-left: 15%;
   animation: arc_movement_2 20s ease-in-out infinite;
 }
 
@@ -187,7 +186,7 @@ h1 {
 
 .flower_designelementer {
   width: 60%;
-  margin-left: 7rem;
+  margin-left: 18%;
   animation: arc_movement_4 20s ease-in-out infinite;
 }
 
@@ -400,6 +399,7 @@ ul li {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 5%;
 }
 
 .skills_flex {
@@ -409,14 +409,14 @@ ul li {
 }
 
 .skills_img {
-  width: 7rem;
+  width: 70%;
 }
 
 .skill_type {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1.5rem;
+  margin: 2%;
 }
 
 .skills_program_img {
@@ -430,7 +430,7 @@ ul li {
   align-items: center;
   justify-content: center;
   height: 100px;
-  width: 90px;
+  width: 80px;
   margin: -0.25rem;
 }
 
@@ -484,10 +484,6 @@ ul li {
 
 .el_flex_cartoon {
   margin: 20% 0 18% 0;
-}
-
-.slide_el {
-  width: 82%;
 }
 
 .slide_el_flex {
@@ -599,8 +595,8 @@ ul li {
 }
 
 .slide_el {
-  height: 28rem;
-  width: 21rem;
+  height: 25rem;
+  width: 18rem;
   border: 5px solid #ffffff;
 }
 
