@@ -35,10 +35,12 @@ export default function Footer() {
             </div>
           </div>
           <div className="footer_left_pc">
-            <div className="gh_pc gh_mobile">
-              <img className="github_footer" src={github} alt="GitHub ikon" />
-              <p className="p_gh">portfolio repository</p>
-            </div>
+            <a href="https://github.com/eifos9/portfolio_react" target="_blank">
+              <div className="gh_pc gh_mobile">
+                <img className="github_footer" src={github} alt="GitHub ikon" />
+                <p className="p_gh">portfolio repository</p>
+              </div>
+            </a>
             <p className="p_footer">sofiebk.dk/portfolio</p>
           </div>
         </div>
