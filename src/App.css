@@ -128,6 +128,7 @@ h1 {
 .flower_planb {
   width: 75%;
   margin-left: 18%;
+  animation: arc_movement 20s ease-in-out infinite;
 }
 
 @keyframes arc_movement {
