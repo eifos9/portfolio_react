@@ -1,0 +1,1441 @@
+/* ----------------- */
+/* --- CSS RESET --- */
+/* ----------------- */
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+/* --------------------- */
+/* --- BASIC STYLING --- */
+/* --------------------- */
+body {
+  background-color: #ffc7c7;
+  font-family: "Raleway", sans-serif;
+}
+
+/* -------------- */
+/* --- HEADER --- */
+/* -------------- */
+header {
+  position: fixed;
+  height: 4.5rem;
+  background-color: #ffc7c7;
+  z-index: 10;
+}
+
+.header_flex {
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  width: 6.5rem;
+  margin-top: 1.25rem;
+  position: relative;
+  z-index: 1;
+}
+
+.blue_wave_header {
+  width: 100%;
+  margin-top: -1rem;
+}
+
+.image_nav_relative {
+  position: relative;
+}
+
+/* -------------- */
+/* --- NAVBAR --- */
+/* -------------- */
+nav {
+  color: #ffffff;
+  font-weight: 300;
+}
+
+.p_nav_projekter {
+  font-size: 12px;
+  transform: rotate(-16deg);
+  position: absolute;
+  top: 8%;
+  left: 12%;
+}
+
+.p_nav_om {
+  font-size: 12px;
+  transform: rotate(16deg);
+  position: absolute;
+  top: 3%;
+  left: 37%;
+}
+
+.p_nav_kontakt {
+  font-size: 12px;
+  transform: rotate(-16deg);
+  position: absolute;
+  top: 8%;
+  left: 52%;
+}
+
+.p_nav_designmanual {
+  font-size: 12px;
+  transform: rotate(16deg);
+  position: absolute;
+  top: 3%;
+  left: 69%;
+}
+
+a {
+  color: #ffffff;
+}
+
+/* ------------ */
+/* --- MAIN --- */
+/* ------------ */
+main {
+  padding-top: 9rem;
+}
+
+/* ---------------- */
+/* --- PROJECTS --- */
+/* ---------------- */
+h1 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 600;
+  margin-top: 1rem;
+  color: #001039;
+}
+
+.p_design_frontend {
+  text-align: center;
+  padding-top: 1rem;
+  font-weight: 800;
+  font-size: 16px;
+  color: #001039;
+}
+
+.project_flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 8%;
+  margin-bottom: 10%;
+}
+
+.flower_planb {
+  width: 75%;
+  margin-left: 4.5rem;
+  animation: arc_movement 15s ease-in-out infinite;
+}
+
+@keyframes arc_movement {
+  0% {
+    transform: rotate(0deg) translateX(15px) rotate(0deg); /* Start position */
+  }
+  50% {
+    transform: rotate(-180deg) translateX(10px) rotate(180deg); /* End position */
+  }
+  100% {
+    transform: rotate(0deg) translateX(15px) rotate(0deg); /* Return to start */
+  }
+}
+
+.flower_nippon {
+  width: 65%;
+  margin-left: 0.5rem;
+  animation: arc_movement_2 20s ease-in-out infinite;
+}
+
+@keyframes arc_movement_2 {
+  0% {
+    transform: rotate(0deg) translateX(15px) rotate(0deg); /* Start position */
+  }
+  50% {
+    transform: rotate(180deg) translateX(10px) rotate(-180deg); /* End position */
+  }
+  100% {
+    transform: rotate(0deg) translateX(15px) rotate(0deg); /* Return to start */
+  }
+}
+
+.flower_neptun {
+  width: 75%;
+  margin-left: 5.5rem;
+  animation: arc_movement_2 20s ease-in-out infinite;
+}
+
+.flower_troejborg {
+  width: 70%;
+  margin-left: 2rem;
+  animation: arc_movement_3 20s ease-in-out infinite;
+}
+
+@keyframes arc_movement_3 {
+  0% {
+    transform: rotate(0deg) translateX(25px) rotate(0deg); /* Start position */
+  }
+  50% {
+    transform: rotate(90deg) translateX(10px) rotate(-90deg); /* End position */
+  }
+  100% {
+    transform: rotate(0deg) translateX(25px) rotate(0deg); /* Return to start */
+  }
+}
+
+.flower_designelementer {
+  width: 60%;
+  margin-left: 7rem;
+  animation: arc_movement_4 20s ease-in-out infinite;
+}
+
+@keyframes arc_movement_4 {
+  0% {
+    transform: rotate(0deg) translateX(25px) rotate(0deg); /* Start position */
+  }
+  50% {
+    transform: rotate(140deg) translateX(10px) rotate(-130deg); /* End position */
+  }
+  100% {
+    transform: rotate(0deg) translateX(25px) rotate(0deg); /* Return to start */
+  }
+}
+
+/* ---------------- */
+/* --- CAROUSEL --- */
+/* ---------------- */
+.carousel {
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  display: flex;
+  animation: carousel-slide 40s linear infinite;
+}
+
+.carousel-item {
+  flex: 0 0 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@keyframes carousel-slide {
+  0% {
+    transform: translateX(
+      0
+    ); /* No horizontal movement; element is fully visible */
+  }
+  100% {
+    transform: translateX(
+      -100%
+    ); /* Element is moved completely off-screen to the left */
+  }
+}
+
+.carousel_left {
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-inner_left {
+  display: flex;
+  animation: carousel-slide-left 40s linear infinite;
+}
+
+.carousel-item_left {
+  flex: 0 0 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@keyframes carousel-slide-left {
+  0% {
+    transform: translateX(
+      -100%
+    ); /* Element is completely off-screen to the left */
+  }
+  100% {
+    transform: translateX(0); /* Element moves into view, fully visible */
+  }
+}
+
+.carousel_large {
+  display: none;
+}
+
+/* --------------- */
+/* --- CONTACT --- */
+/* --------------- */
+.contact {
+  background-color: #001039;
+}
+
+h2 {
+  color: #ffffff;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 10%;
+  font-size: 24px;
+}
+
+.contact_icons {
+  width: 2.5rem;
+}
+
+.contact_mail {
+  color: #ffffff;
+  font-size: 12px;
+  padding-top: 0.75rem;
+}
+
+.contact_flex {
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+}
+
+.contact_flex_container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+}
+
+.contact_mail_flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 1rem;
+}
+
+.pink_wave_contact {
+  width: 100%;
+  margin-top: 3rem;
+}
+
+.blue_wave_contact {
+  width: 100%;
+}
+
+.blue_wave_skills {
+  width: 100%;
+  margin: 10% 0 0 0;
+}
+
+.pink_white_flower {
+  display: none;
+}
+
+.contact_pc {
+  padding: 7% 0;
+}
+
+/* ------------- */
+/* --- ABOUT --- */
+/* ------------- */
+.portrait {
+  width: 70%;
+  margin-top: 2rem;
+}
+
+.portrait_flex {
+  display: flex;
+  justify-content: center;
+}
+
+.about_h2 {
+  font-weight: 500;
+}
+
+.about_p {
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: 200;
+  line-height: 200%;
+  padding: 10%;
+}
+
+.about_p_bold {
+  display: inline;
+  font-weight: 600;
+}
+
+h3 {
+  color: #ffffff;
+  text-align: center;
+  font-weight: 400;
+}
+
+ul li {
+  color: #ffffff;
+  margin-top: 1rem;
+  margin-left: 20%;
+  font-size: 14px;
+  list-style-type: none;
+  line-height: 200%;
+  padding-left: 3rem;
+  background: url(images/pink_bullet.png) no-repeat 0 0.25em;
+  background-size: 1.6rem 1.6rem;
+}
+
+.about_list {
+  padding-bottom: 3rem;
+}
+
+/* -------------- */
+/* --- SKILLS --- */
+/* -------------- */
+.h3_skills {
+  color: #001039;
+  padding: 2rem 0 1rem 0;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.skills_flex_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills_flex {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.skills_img {
+  width: 7rem;
+}
+
+.skill_type {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+.skills_program_img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.skill_type_program {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 90px;
+  margin: -0.25rem;
+}
+
+.skills_p {
+  font-size: 14px;
+  padding-top: 0.5rem;
+}
+
+.program_p {
+  font-size: 12px;
+  padding-top: 0.5rem;
+}
+
+/* ----------------------- */
+/* --- DESIGN ELEMENTS --- */
+/* ----------------------- */
+.h2_el {
+  color: #001039;
+  font-weight: 700;
+  font-size: 24px;
+  margin-top: 5%;
+}
+
+.nippon_logo {
+  width: 9rem;
+  margin: 2rem 0 -1rem 0;
+}
+
+.p_el {
+  text-align: center;
+  margin: 0 2rem;
+  font-size: 14px;
+  line-height: 175%;
+}
+
+.program_el {
+  width: 2rem;
+  margin: 1rem 0.5rem 0 0;
+}
+
+.el_flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 7% 0 15% 0;
+}
+
+.el_flex_mg {
+  margin: 20% 0 15% 0;
+}
+
+.el_flex_cartoon {
+  margin: 20% 0 18% 0;
+}
+
+.slide_el {
+  width: 82%;
+}
+
+.slide_el_flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow_left {
+  transform: rotate(180deg);
+  height: 2rem;
+  margin-right: 0.5rem;
+}
+
+.arrow_right {
+  height: 2rem;
+  margin-left: 0.5rem;
+}
+
+.el_text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.spirit_video {
+  width: 100%;
+  padding: 0 9%;
+}
+
+.designel_gallery {
+  width: 80%;
+  border: 5px solid #ffffff;
+}
+
+.h3_el {
+  font-size: 20px;
+  color: #001039;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  font-weight: 600;
+}
+
+/* ------------- */
+/* --- QUOTE --- */
+/* ------------- */
+.quote_section {
+  background-color: #001039;
+}
+
+.quotation {
+  width: 1.5rem;
+  padding: 1rem 0;
+}
+
+.p_quote {
+  color: #ffffff;
+  font-size: 1rem;
+  line-height: 200%;
+  text-align: center;
+  margin: 0 2.3rem 1rem 2.3rem;
+}
+
+.moon {
+  width: 30%;
+  animation: rotate 40s linear infinite;
+}
+
+.moon_flex {
+  display: flex;
+  justify-content: center;
+}
+
+.quote_flex {
+  padding: 7% 0;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(
+      0deg
+    ); /* No rotation; element is in its default position */
+  }
+  to {
+    transform: rotate(360deg); /* Element is rotated a full circle */
+  }
+}
+
+.quote_flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.blue_wave_contact_reverse {
+  width: 100%;
+  transform: rotate(180deg);
+  margin-bottom: -5px;
+}
+
+/* --------------- */
+/* --- TALENTS --- */
+/* --------------- */
+.talents_flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5% 0;
+}
+
+.slide_el {
+  height: 28rem;
+  width: 21rem;
+  border: 5px solid #ffffff;
+}
+
+.p_caption {
+  font-size: 14px;
+  margin-top: 3%;
+}
+
+/* -------------------- */
+/* --- PROJECT PAGE --- */
+/* -------------------- */
+.h1_project {
+  margin: 5% 0;
+}
+
+.project_page {
+  background-color: #001039;
+}
+
+.waves_top {
+  width: 100%;
+  margin-bottom: -5px;
+}
+
+.waves_bottom {
+  width: 100%;
+}
+
+.video_project {
+  width: 85%;
+  border: 5px solid #ffc7c7;
+  margin: 18% 0 0 0;
+}
+
+.h3_project {
+  padding: 18% 0 0 0;
+}
+
+.video_project_info {
+  width: 85%;
+  border: 5px solid #ffffff;
+  margin: 10% 0 3% 0;
+}
+
+.project_content_flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.link_flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 7% 0 0 0;
+}
+
+.p_link {
+  color: #ffffff;
+  font-size: 1rem;
+  text-decoration: underline;
+}
+
+.arrow_white {
+  width: 2rem;
+}
+
+.icons_flex {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 50% 0;
+}
+
+.icons_size {
+  width: 1.75rem;
+  margin: 15%;
+}
+
+.video_text {
+  color: #ffffff;
+  text-align: center;
+  margin: 2% 12%;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.text_larger {
+  color: #ffffff;
+  text-align: center;
+  margin: 7% 0;
+}
+
+.text_info {
+  color: #ffffff;
+  font-size: 14px;
+  margin: 0 8%;
+  line-height: 200%;
+}
+
+.p_gh_pc {
+  color: #ffffff;
+  font-size: 12px;
+}
+
+.content_pc_inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* --------------- */
+/* --- BUTTONS --- */
+/* --------------- */
+.btn_pink {
+  max-width: 10rem;
+}
+
+.btn_flex {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin: 10% 0 30% 0;
+}
+
+.p_btn {
+  position: absolute;
+  top: 40%;
+  font-size: 20px;
+  color: #001039;
+}
+
+.btn_project {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 18% 0 0 0;
+}
+
+/* -------------- */
+/* --- FOOTER --- */
+/* -------------- */
+footer {
+  background-color: #001039;
+}
+
+.p_footer {
+  color: #ffffff;
+  text-align: center;
+  font-size: 16px;
+  margin-top: 2rem;
+}
+
+.footer_flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 4rem;
+  padding-top: 2rem;
+}
+
+.github_footer {
+  width: 2.5rem;
+  margin: 4rem 0 1rem 0;
+}
+
+.p_gh {
+  color: #ffffff;
+  font-size: 12px;
+}
+
+.blue_wave_footer {
+  width: 100%;
+  margin-bottom: -4px;
+}
+
+.gh_mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.h2_footer {
+  font-size: 24px;
+}
+
+/* ----------------------------------------- */
+/* --- MEDIA QUERY - LAYOUTED TRANSITION --- */
+/* ----------------------------------------- */
+@media screen and (min-width: 512px) {
+  /* -------------- */
+  /* --- NAVBAR --- */
+  /* -------------- */
+  .p_nav_projekter {
+    top: 30%;
+    left: 12%;
+  }
+
+  .p_nav_kontakt {
+    top: 10%;
+    left: 58%;
+  }
+
+  .p_nav_om {
+    top: 20%;
+    left: 37%;
+  }
+
+  .p_nav_designmanual {
+    top: 30%;
+    left: 75%;
+  }
+
+  /* ------------ */
+  /* --- MAIN --- */
+  /* ------------ */
+  main {
+    padding-top: 11rem;
+  }
+}
+
+/* --------------------------------- */
+/* --- MEDIA QUERY - TABLET + PC --- */
+/* --------------------------------- */
+@media screen and (min-width: 768px) {
+  /* -------------- */
+  /* --- HEADER --- */
+  /* -------------- */
+  header {
+    width: 100%;
+  }
+
+  .logo {
+    margin: 2% 0 0 5%;
+    position: relative;
+    z-index: 1;
+    width: 10%;
+  }
+
+  .header_flex {
+    display: block;
+    height: 100%;
+  }
+
+  .blue_wave_header {
+    margin-top: -0.2rem;
+  }
+
+  /* -------------- */
+  /* --- NAVBAR --- */
+  /* -------------- */
+  nav {
+    color: #001039;
+    font-weight: 400;
+  }
+
+  .p_nav_projekter {
+    font-size: 16px;
+    transform: rotate(0);
+    top: -275%;
+    left: 56%;
+    font-weight: 500;
+    animation: projekter_kontakt 7s ease-in-out infinite;
+  }
+
+  .p_nav_om {
+    font-size: 16px;
+    transform: rotate(0);
+    top: -200%;
+    left: 67.5%;
+    font-weight: 500;
+    animation: om_designmanual 7s ease-in-out infinite;
+  }
+
+  .p_nav_kontakt {
+    font-size: 16px;
+    transform: rotate(0);
+    top: -275%;
+    left: 75.5%;
+    font-weight: 500;
+    animation: projekter_kontakt 7s ease-in-out infinite;
+  }
+
+  .p_nav_designmanual {
+    font-size: 16px;
+    transform: rotate(0);
+    top: -200%;
+    left: 85.5%;
+    font-weight: 500;
+    animation: om_designmanual 7s ease-in-out infinite;
+  }
+
+  @keyframes projekter_kontakt {
+    0% {
+      transform: translateY(0); /* Start position */
+    }
+    50% {
+      transform: translateY(25px); /* Move down */
+    }
+    100% {
+      transform: translateY(0); /* Move back up */
+    }
+  }
+
+  @keyframes om_designmanual {
+    0% {
+      transform: translateY(0); /* Start position */
+    }
+    50% {
+      transform: translateY(-25px); /* Move up */
+    }
+    100% {
+      transform: translateY(0); /* Move back down */
+    }
+  }
+
+  a {
+    color: #001039;
+  }
+
+  /* ------------ */
+  /* --- MAIN --- */
+  /* ------------ */
+  main {
+    padding-top: 8rem;
+  }
+
+  /* ---------------- */
+  /* --- PROJECTS --- */
+  /* ---------------- */
+  h1 {
+    font-size: 3.5rem;
+    margin-top: 3rem;
+  }
+
+  h1 br {
+    display: none;
+  }
+
+  .p_design_frontend {
+    padding-top: 1.5rem;
+    font-weight: 800;
+    font-size: 1.7rem;
+  }
+
+  a {
+    width: 100%;
+  }
+
+  .flower_planb {
+    width: 27%;
+    margin-top: -5%;
+    margin-left: 36%;
+  }
+
+  .flower_nippon {
+    width: 24%;
+    margin-left: 5%;
+    margin-top: -18%;
+  }
+
+  .flower_neptun {
+    width: 26%;
+    margin-left: 67%;
+    margin-top: -18%;
+  }
+
+  .flower_troejborg {
+    width: 20%;
+    margin-left: 25%;
+    margin-top: -5%;
+  }
+
+  .flower_designelementer {
+    width: 20%;
+    margin-left: 50%;
+    margin-top: -12%;
+    margin-bottom: 3%;
+  }
+
+  .project_flex {
+    width: 100%;
+    display: block;
+    margin-bottom: 0;
+  }
+
+  .github_project {
+    padding-bottom: 5%;
+  }
+
+  /* ---------------- */
+  /* --- CAROUSEL --- */
+  /* ---------------- */
+  .carousel_large {
+    display: block;
+  }
+
+  .carousel_small {
+    display: none;
+  }
+
+  /* --------------- */
+  /* --- CONTACT --- */
+  /* --------------- */
+  .contact_flex_pc {
+    margin-top: 5%;
+  }
+
+  .contact_flex_container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20%;
+  }
+
+  .contact_flower_flex {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .blue_wave_skills {
+    margin: 0;
+  }
+
+  .pink_white_flower {
+    display: block;
+    width: 35%;
+    margin-left: 4%;
+    margin-top: 2%;
+    animation: arc_movement_2 20s ease-in-out infinite;
+  }
+
+  @keyframes arc_movement_2 {
+    0% {
+      transform: rotate(0deg) translateX(15px) rotate(0deg); /* Start position */
+    }
+    50% {
+      transform: rotate(120deg) translateX(10px) rotate(-120deg); /* End position */
+    }
+    100% {
+      transform: rotate(0deg) translateX(15px) rotate(0deg); /* Return to start */
+    }
+  }
+
+  .contact_pc {
+    margin-top: 10%;
+    margin-right: 8%;
+    padding: 0;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+
+  .pink_wave_contact {
+    margin-top: 5rem;
+  }
+
+  /* ------------- */
+  /* --- ABOUT --- */
+  /* ------------- */
+  .about_flex_pc {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 3% 0;
+  }
+
+  .portrait_flex_pc {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    padding: 0 7% 0 0;
+    margin-top: -9%;
+  }
+
+  .portrait {
+    width: 85%;
+  }
+
+  .about_text_pc {
+    width: 100%;
+    padding: 2% 5% 2% 10%;
+  }
+
+  .about_h2 {
+    text-align: start;
+    font-size: 36px;
+    margin-bottom: 3%;
+  }
+
+  .about_p {
+    padding: 0;
+    font-size: 16px;
+  }
+
+  .h3_about_pc {
+    text-align: start;
+    font-size: 24px;
+    margin: 7% 0 2% 0;
+  }
+
+  .about_list {
+    display: flex;
+    width: 100%;
+  }
+
+  ul li {
+    margin-left: 0;
+    font-size: 16px;
+  }
+
+  .ul_right {
+    margin-left: 5%;
+  }
+
+  .h2_about {
+    font-size: 24px;
+  }
+
+  /* -------------- */
+  /* --- SKILLS --- */
+  /* -------------- */
+  .skills_flex_container {
+    flex-direction: row;
+    justify-content: center;
+    margin: 2% 7%;
+  }
+
+  .skills_img {
+    width: 60%;
+  }
+
+  .skill_type {
+    padding: 0;
+  }
+
+  .program_p {
+    font-size: 70%;
+  }
+
+  .skills_program_img {
+    width: 40%;
+    height: 35%;
+  }
+
+  .programs_margin {
+    display: flex;
+    margin: 0;
+    flex-wrap: wrap;
+    margin-bottom: 6%;
+  }
+
+  .h3_skills {
+    font-size: 28px;
+    margin-top: 5%;
+  }
+
+  .skills_p {
+    font-size: 16px;
+  }
+
+  /* ----------------------- */
+  /* --- DESIGN ELEMENTS --- */
+  /* ----------------------- */
+  .el_flex {
+    flex-direction: row;
+    justify-content: center;
+    margin: 5% 14% 10% 14%;
+  }
+
+  .el_flex_mg {
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin: 8% 14% 8% 14%;
+    align-items: flex-start;
+  }
+
+  .el_text_pc {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 8%;
+  }
+
+  .el_text_pc_mg {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 8%;
+  }
+
+  .p_el {
+    margin: 0;
+    text-align: start;
+    font-size: 16px;
+  }
+
+  .h2_el {
+    font-size: 36px;
+    margin: -2% 0;
+  }
+
+  .h3_el {
+    font-size: 20px;
+    color: #001039;
+    margin-top: 0;
+    margin-bottom: 2%;
+    font-weight: 600;
+  }
+
+  .spirit_video {
+    width: 125%;
+    margin-left: -23%;
+  }
+
+  .el_flex_cartoon {
+    margin: 8% 14% 10% 13%;
+    align-items: flex-start;
+  }
+
+  /* ------------- */
+  /* --- QUOTE --- */
+  /* ------------- */
+  .quote_flex {
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 7% 0;
+  }
+
+  .quote_text_flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 38%;
+  }
+
+  .moon {
+    width: 75%;
+  }
+
+  .p_quote {
+    font-size: 20px;
+  }
+
+  /* --------------- */
+  /* --- TALENTS --- */
+  /* --------------- */
+  .talents_flex_pc {
+    display: flex;
+    justify-content: center;
+  }
+
+  .talents_flex {
+    padding: 5% 1%;
+  }
+
+  .slide_el {
+    width: 100%;
+    height: 25rem;
+  }
+
+  .slide_el_flex {
+    padding: 0 5%;
+  }
+
+  .p_caption {
+    font-size: 16px;
+  }
+
+  /* -------------------- */
+  /* --- PROJECT PAGE --- */
+  /* -------------------- */
+  .project_content_flex {
+    flex-direction: row-reverse;
+    padding: 3% 7%;
+  }
+
+  .project_content_flex_pc {
+    flex-direction: column;
+  }
+
+  .h3_project {
+    padding: 8% 0 2% 0;
+    font-size: 24px;
+  }
+
+  .content_pc {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+  }
+
+  .content_pc_inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .icons_flex {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 80% 0 120% 0;
+  }
+
+  .p_gh_pc {
+    color: #ffffff;
+    font-size: 12px;
+  }
+
+  .gh_link_pc {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    margin-top: 5%;
+  }
+
+  .text_larger {
+    text-align: start;
+    font-size: 18px;
+  }
+
+  .text_info {
+    margin: 0;
+    padding-right: 10%;
+    font-size: 16px;
+  }
+
+  .h2_project_page {
+    text-align: start;
+  }
+
+  .video_project {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .video_project_info {
+    width: 95%;
+  }
+
+  .video_text {
+    font-size: 16px;
+  }
+
+  /* --------------- */
+  /* --- BUTTONS --- */
+  /* --------------- */
+  .btn_flex {
+    margin: 10% 40% 8% 40%;
+  }
+
+  .btn_pink:hover {
+    animation: shake 0.5s ease; /* Trigger the shake animation on hover */
+  }
+
+  @keyframes shake {
+    0% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-5px);
+    } /* Move left */
+    50% {
+      transform: translateX(5px);
+    } /* Move right */
+    75% {
+      transform: translateX(-5px);
+    } /* Move left again */
+    100% {
+      transform: translateX(0);
+    } /* Return to original position */
+  }
+
+  .btn_project {
+    margin: 0 20% 7% 20%;
+  }
+
+  /* -------------- */
+  /* --- FOOTER --- */
+  /* -------------- */
+  .footer_flex {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 8rem 12%;
+  }
+
+  .gh_pc {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+  }
+
+  .github_footer {
+    margin: 0;
+  }
+
+  .contact_flex {
+    margin-top: 18%;
+  }
+
+  .p_gh {
+    margin-left: 1.5rem;
+  }
+
+  .footer_left_pc {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* ------------------------ */
+/* --- MEDIA QUERY - PC --- */
+/* ------------------------ */
+@media screen and (min-width: 1024px) {
+  /* -------------- */
+  /* --- HEADER --- */
+  /* -------------- */
+  header {
+    height: 6rem;
+  }
+
+  .logo {
+    width: 6.5rem;
+  }
+
+  /* ------------ */
+  /* --- MAIN --- */
+  /* ------------ */
+  main {
+    padding-top: 10rem;
+  }
+
+  h1 {
+    font-size: 4.2rem;
+    margin-top: 3rem;
+  }
+}
