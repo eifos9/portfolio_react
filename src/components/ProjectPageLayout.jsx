@@ -56,7 +56,7 @@ export default function ProjectPageLayout({
               </a>
               <a href={prototype} target="_blank">
                 <div className="link_flex">
-                  <p className="p_link">gå til vores løsning</p>
+                  <p className="p_link">gå til prototype</p>
                   <img className="arrow_white" src={arrow} alt="Pil" />
                 </div>
               </a>
